@@ -7,33 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="bg_img">
-        <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="">
-    </div>
-    <div id="form_side">
-        <div class="upper">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit facilis obcaecati sint voluptates nisi aspernatur aliquid eaque, tenetur dolor commodi quaerat, molestias molestiae expedita vitae consequuntur necessitatibus ea minus!
+    <div class="main">
+        <div id="bg_img">
+
         </div>
-        <div class="theFrom">
-            <form action="">
-                <label for="first_name">first name</label>
-                <input type="text" id="first_name">
-                
-                <label for="last_name">last name</label>
-                <input type="text" id="last_name">
-                
-                <label for="email">email</label>
-                <input type="email" id="email">
-
-                <label for="phone">phone number</label>
-                <input type="tel">
-
-                <label for="mdp">Password</label>
-                <input type="password" id="mdp">
-
-                <label for="mdp2">Confirm Password</label>
-                <input type="password" id="mdp2">
-            </form>
+        <div id="form_side">
+            <div class="upper">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit facilis obcaecati sint voluptates nisi aspernatur aliquid eaque, tenetur dolor commodi quaerat, molestias molestiae expedita vitae consequuntur necessitatibus ea minus!
+            </div>
+            <div class="theFrom">
+                <form action="">
+                    <fieldset>
+                        <legend>Let's do this</legend>
+                        <div class="left">
+                            <div class="line">
+                                <label for="first_name">first name</label>
+                                <input type="text" id="first_name">
+                                </div>
+                            <div class="line">
+                                <label for="email">email</label>
+                                <input type="email" id="email">
+                                </div>
+                            <div class="line">
+                                <label for="mdp">Password</label>
+                            <input type="password" id="mdp">
+                            </div>
+                        </div>
+                        
+                        <div class="right">
+                            <div class="line">
+                                <label for="last_name">last name</label>
+                                <input type="text" id="last_name">
+                            </div>
+                            <div class="line">
+                                <label for="phone">phone number</label>
+                                <input type="tel" id="phone">
+                                </div>
+                            <div class="line"><label for="mdp2">Confirm Password</label>
+                                <input type="password" id="mdp2">
+                            </div>
+                        </div>
+                </fieldset>
+                <button type="submit">Create Account</button>
+                <br>
+                already have an account? <a href="">Log in</a>
+                </form>
+            </div>
         </div>
     </div>
 </body>
