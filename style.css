@@ -1,23 +1,26 @@
 body,html {
     padding: 0;
     margin: 0;
-    height: 100%;
-    width: 100%;
+    height: 120%;
 }
 .main{
     display: flex;
     flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
 }
 #form_side{
     flex: 6;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 #bg_img{
-    flex: 4;
+    flex: 3.5;
     background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
     background-position: center;
-    background-size:contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }/*
 #bg_img>img{
@@ -26,10 +29,10 @@ body,html {
 }*/
 
 .upper{
-    background-color: gray;
     box-sizing: border-box;
-    padding: 10px;
-    padding-left: 30px;
+    padding: 10%;
+    padding-left: 5%;
+    padding-top: 20%;
 }
 
 /*.theFrom{
@@ -38,13 +41,15 @@ body,html {
 }*/
 
 fieldset{
-    margin: 15px 0px 15px 0px;
+    padding: 7%;
+    margin-top: 5%;
     box-shadow: 0px 15px 10px gray;
     border: gray;
     display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    background-color: white;
 }
 
 .line{
@@ -52,21 +57,41 @@ fieldset{
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    justify-content: space-between;
 }
-.right{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: flex-end;
 
-}
-.left{
+.coll{
     display: flex;
-    flex: 1;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+
+input{
+    border-radius: 10px;
+    border-color: #E5E7EB;
+}
+
+input:valid:focus{
+    border-color: blue;
+}
+
+input:invalid{
+    border-color: red;
+    box-shadow: 0px 0px 20px red;
+}
+
+.btn{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+button{
+    background-color: #596D48;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 30%;
 }

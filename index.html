@@ -9,7 +9,6 @@
 <body>
     <div class="main">
         <div id="bg_img">
-
         </div>
         <div id="form_side">
             <div class="upper">
@@ -18,8 +17,8 @@
             <div class="theFrom">
                 <form action="">
                     <fieldset>
-                        <legend>Let's do this</legend>
-                        <div class="left">
+                        <legend><b>Let's do this</b></legend>
+                        <div class="coll">
                             <div class="line">
                                 <label for="first_name">first name</label>
                                 <input type="text" id="first_name">
@@ -30,11 +29,11 @@
                                 </div>
                             <div class="line">
                                 <label for="mdp">Password</label>
-                            <input type="password" id="mdp">
+                            <input type="password" id="mdp" required>
                             </div>
                         </div>
                         
-                        <div class="right">
+                        <div class="coll">
                             <div class="line">
                                 <label for="last_name">last name</label>
                                 <input type="text" id="last_name">
@@ -44,13 +43,15 @@
                                 <input type="tel" id="phone">
                                 </div>
                             <div class="line"><label for="mdp2">Confirm Password</label>
-                                <input type="password" id="mdp2">
+                                <input type="password" id="mdp2" required>
                             </div>
                         </div>
                 </fieldset>
-                <button type="submit">Create Account</button>
-                <br>
-                already have an account? <a href="">Log in</a>
+                <div class="btn">
+                    <button type="submit">Create Account</button>
+                    <br>
+                    already have an account? <a href="">Log in</a>
+                </div>
                 </form>
             </div>
         </div>
