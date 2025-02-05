@@ -9,6 +9,10 @@
 <body>
     <div class="main">
         <div id="bg_img">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="background image">
+                <p>Logo</p>
+            </div>
         </div>
         <div id="form_side">
             <div class="upper">
@@ -19,30 +23,28 @@
                     <fieldset>
                         <legend><b>Let's do this</b></legend>
                         <div class="coll">
-                            <div class="line">
+                            <div class="labels">
                                 <label for="first_name">first name</label>
-                                <input type="text" id="first_name">
-                                </div>
-                            <div class="line">
                                 <label for="email">email</label>
-                                <input type="email" id="email">
-                                </div>
-                            <div class="line">
                                 <label for="mdp">Password</label>
-                            <input type="password" id="mdp" required>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" id="first_name">
+                                <input type="email" id="email">
+                                <input type="password" id="mdp" required>
                             </div>
                         </div>
                         
                         <div class="coll">
-                            <div class="line">
+                            <div class="labels">
                                 <label for="last_name">last name</label>
-                                <input type="text" id="last_name">
-                            </div>
-                            <div class="line">
                                 <label for="phone">phone number</label>
+                                <label for="mdp2">Confirm Password</label>
+
+                            </div>
+                            <div class="inputs">
+                                <input type="text" id="last_name">
                                 <input type="tel" id="phone">
-                                </div>
-                            <div class="line"><label for="mdp2">Confirm Password</label>
                                 <input type="password" id="mdp2" required>
                             </div>
                         </div>
@@ -58,3 +60,23 @@
     </div>
 </body>
 </html>
+
+<script>
+    const form = document.querySelector('#mdp');
+    const form2 = document.querySelector('#mdp2');
+    form.addEventListener('input', function() {
+        if(form.value === form2.value){
+            form2.style.backgroundColor = 'green';
+        } else {
+            form2.style.backgroundColor = 'red';
+        }
+    });
+    form2.addEventListener('input', function() {
+        if(form.value === form2.value){
+            form2.style.backgroundColor = 'green';
+        } else {
+            form2.style.backgroundColor = 'red';
+        }
+    });
+
+</script>
